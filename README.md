@@ -58,6 +58,20 @@ docker-compose up --build -d
 
 服務啟動後，您即可透過瀏覽器訪問 **`http://localhost:8000/docs`**，體驗由 FastAPI 自動生成的 Swagger UI 介面，直接測試 API 功能！
 
+### 4. 操作與測試 API (無前端介面)
+
+本專案提供的是後端 API 服務，沒有傳統的圖形化使用者介面（GUI）。您可透過以下兩種方式操作與測試 API：
+
+#### a. 使用 Swagger UI (推薦)
+
+FastAPI 會自動生成互動式 API 文件。這是最直接且無需額外工具的測試方式：
+
+1.  **訪問網址**：在瀏覽器中開啟 `http://localhost:8000/docs`。
+2.  **找到端點**：點擊 `/generate_marketing_content` 的 POST 請求。
+3.  **嘗試發送**：點擊右側的 `Try it out` 按鈕。
+4.  **修改請求**：在 `Request body` 區塊，修改 JSON 範例中的 `style`、`audience` 等參數。
+5.  **執行請求**：點擊 `Execute`，即可在下方 `Responses` 區塊查看生成的文案和 Rubric 評分。
+
 ---
 
 ## 📂 專案結構概覽
