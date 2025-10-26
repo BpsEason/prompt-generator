@@ -1,0 +1,7 @@
+# 格式模組範例 (P1 格式模組)
+社群貼文:
+  description: "適用於 Facebook/Instagram 的短文案，需包含 3-5 個 #Hashtag，並有表情符號。"
+  prompt_fragment: "輸出內容需以一則社群貼文格式呈現，長度不超過 150 字，必須使用表情符號並包含 3-5 個相關的 #Hashtag。"
+EDM 標題:
+  description: "電子報主旨，目標是提高開信率。"
+  prompt_fragment: "只輸出一個電子報標題，長度不超過 20 個中文字，必須具有緊急性或好奇心。"

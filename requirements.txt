@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings # 新增：用於環境變數管理
+PyYAML
+# 實際串接 LLM 需要的套件
+# openai
+# azure-core
+# 測試
+pytest

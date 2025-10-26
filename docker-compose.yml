@@ -1,0 +1,17 @@
+# docker-compose.yml (P4)
+version: '3.8'
+
+services:
+  prompt-generator:
+    build: .
+    container_name: prompt_generator_app
+    restart: always
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app:/app/app
+      - ./requirements.txt:/app/requirements.txt
+      - ./.env:/app/.env # 確保 .env 文件被掛載到容器內
+    environment:
+      # 可以直接從環境變數傳遞，或依賴 .env 檔案
+      PYTHONUNBUFFERED: 1
